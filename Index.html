@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Human Brain Tumor Detection Tool</title>
+</head>
+<body>
+    <!-- Menu bar -->
+     <div class="header">
+        <header>
+            <div class="logo-box">
+                <img src="images/logo.png" />
+            </div>
+            <nav>
+                <ul>
+                    <li class="home"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/moon.png" id="mode">
+        </header>
+     </div>
+
+     <div class="hello">
+
+     </div>
+
+    <!-- Middle section -->
+    <div class="root one">
+        <div class="image-proceed-section">
+            <label for="input-file" id="drop-area-section">
+                <input type="file" accept="image/*" id="input-file" hidden/>
+                <div id="image-show">
+                    <img src="images/black-upload-icon.png"/>
+                    <p>Drag and drop or click here<br> to the uplaod image</p>
+                    <span>Upload jpg or png image files only</span>
+                </div>
+            </label>
+            <div class="button-section">
+                <p>
+                    <b>Instructions for User :</b><br>
+                    Please, Click the proceed button for find the brain tumor in uploaded MRI scan image. (Make sure, the uploaded image is MRI scan image.)
+                    <br><br>
+                    <b>About This System :</b><br>
+                    MRI images to highlight specific tumor characteristics, segmenting tumor regions and measuring the 
+                    dimensions using contour detection for size calculations to identify the tumor and provide additional 
+                    information regarding the stage of the tumor and its size.
+                </p>
+                <button type="submit" id="proceed">Proceed</button>
+            </div>
+        </div>
+    </div>
+    <div class="root two">
+        <div class="image-proceed-section">
+            <label for="input-file" id="drop-area-section">
+                <input type="file" accept="image/*" id="input-file" hidden/>
+                <div id="image-show">
+                    <img src="images/black-upload-icon.png"/>
+                    <p>Drag and drop or click here<br> to the uplaod image</p>
+                    <span>Upload jpg or png image files only</span>
+                </div>
+            </label>
+            <div class="button-section">
+                <p>
+                    <b>Instructions for User :</b><br>
+                    Please, Click the proceed button for find the brain tumor in uploaded MRI scan image. (Make sure, the uploaded image is MRI scan image.)
+                    <br><br>
+                    <b>About This System :</b><br>
+                    MRI images to highlight specific tumor characteristics, segmenting tumor regions and measuring the 
+                    dimensions using contour detection for size calculations to identify the tumor and provide additional 
+                    information regarding the stage of the tumor and its size.
+                </p>
+                <button type="submit" id="proceed">Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popupWindow" class="popup" style="display: none;">
+        <span class="close" onclick="closeProceedPopup()">&times;</span>
+        <h1>Processed Images:</h1>
+        <div id="imageStages">
+            <!-- Processed images will be displayed here -->
+        </div>
+        <div id="measurements">
+            <h2>Measurements:</h2>
+            <p id="brainDimensions"></p>
+            <p id="tumorDimensions"></p>
+        </div>
+        <a id="pdfLink" href="#" download style="display: none;">Download PDF Report</a>
+    </div>
+
+    <!-- scale-up images -->
+    <div id="imagePopupWindow" class="imagePopup" style="display: none;">
+        <div class="top-bar">
+            <div class="logo-box settle-logo">
+                <img src="images/logo.png" />
+            </div>
+            <p class="image-name">Gray-scale Image</p>
+            <span class="image-close" onclick="closeImagePopup()">&times;</span>
+        </div>
+
+        <!-- arrows -->
+        <button class="arrow-btn left-arrow"><img src="images/white-arrow.png"></button>
+        <button class="arrow-btn right-arrow"><img src="images/white-arrow.png"></button>
+        
+        <!-- image-show -->
+        <img src="" class="large-image" id="image-scaling">
+    </div>
+
+    <!-- footer bar -->
+    <footer>
+        <P>&copy; Human Brain Tumor Detection Tool designed by <b>HLTS</b></P> 
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
