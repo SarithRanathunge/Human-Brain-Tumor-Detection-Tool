@@ -35,6 +35,11 @@ body {
     flex-direction: column;
 }
 
+.header{
+    width: 100%;
+    position: fixed;
+}
+
 .home{
     font-weight: bold;
 }
@@ -138,6 +143,10 @@ body {
     padding-bottom: 0.5em;
     cursor: pointer;
     margin-top: 30px;
+}
+
+.footer{
+    width: 100%;
 }
 
 /* popup window  */

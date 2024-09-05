@@ -4,28 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
     <title>Human Brain Tumor Detection Tool</title>
+    <script src="script.js"></script>
+
 </head>
 <body>
     <!-- Menu bar -->
-     <div class="header">
-        <header>
-            <div class="logo-box">
-                <img src="images/logo.png" />
-            </div>
-            <nav>
-                <ul>
-                    <li class="home"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="images/moon.png" id="mode">
-        </header>
-     </div>
+     <div class="header" id="header-placeholder"></div>
 
      <div class="hello">
 
@@ -105,21 +90,13 @@
             <p class="image-name">Gray-scale Image</p>
             <span class="image-close" onclick="closeImagePopup()">&times;</span>
         </div>
-
-        <!-- arrows -->
         <button class="arrow-btn left-arrow"><img src="images/white-arrow.png"></button>
         <button class="arrow-btn right-arrow"><img src="images/white-arrow.png"></button>
-        
-        <!-- image-show -->
         <img src="" class="large-image" id="image-scaling">
     </div>
 
-    <!-- footer bar -->
-    <footer>
-        <P>&copy; Human Brain Tumor Detection Tool designed by <b>HLTS</b></P> 
-    </footer>
+    <!-- Footer bar -->
+    <div class="footer" id="footer-placeholder"></div>
 
-    
-    <script src="script.js"></script>
 </body>
 </html>

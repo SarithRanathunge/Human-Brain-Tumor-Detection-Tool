@@ -5,58 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
     <title>Human Brain Tumor Detection Tool</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <header>
-            <div class="logo-box">
-                <img src="images/logo.png" />
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="Index.html" >Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li class="contact"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="images/moon.png" id="mode">
-        </header>
-    </div>
+    <!-- Menu-bar -->
+    <div class="header" id="header-placeholder"></div>
 
+    <!-- Middle-section -->
     <div class="contact_section">
         <div class="contact-container">
             <h1>Contact Us</h1>
             <form action="#" method="post">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input placeholder="Full Name" type="text" id="name" name="name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input placeholder="Email Address" type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input placeholder="Phone Number" type="tel" id="phone" name="phone" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input placeholder="Email Subject" type="tel" id="phone" name="phone" required>
                 </div>
-                <button type="submit">Submit</button>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group button-area">
+                    <button type="submit" class="reset">Reset</button>
+                    <button type="submit" class="send-message">Send Message</button>
+                </div>
             </form>
         </div>
     </div>
 
-    <footer>
-        <P>&copy; Human Brain Tumor Detection Tool designed by <b>HLTS</b></P> 
-    </footer>
-
-
-    <script src="script.js"></script>
+    <!-- Footer-bar -->
+    <div class="footer" id="footer-placeholder"></div>
 </body>
 </html>
