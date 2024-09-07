@@ -43,14 +43,14 @@
     border-radius: 10px;
 }
 
-.details{
+.detail{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
 }
 
-.details h2{
+.detail h2{
     margin-top: 5px;
 }
 
@@ -76,7 +76,7 @@
     cursor: pointer;
 }
 
-.details p{
+.detail p{
     margin-top: 10px;
 }
 

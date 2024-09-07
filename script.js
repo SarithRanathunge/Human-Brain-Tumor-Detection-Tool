@@ -3,7 +3,7 @@ function loadHeader() {
       .then(response => response.text())
       .then(data => {
           document.getElementById('header-placeholder').innerHTML = data;
-          applyModeSettings(); // Call your mode script after the header loads
+          applyModeSettings();
       });
 }
 
@@ -16,29 +16,32 @@ function loadFooter() {
 }
 
 function applyModeSettings() {
-  let mode = document.getElementById("mode");
-  let facebook = document.getElementById("facebook");
-  let linkedin = document.getElementById("linkedin");
+  var mode = document.getElementById("mode");
   if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark-mode");
       mode.src = "images/sun.png";
-      facebook.src = "images/sun.png";
-      linkedin.src = "images/sun.png";
+      // facebook.src = "images/white-facebook.png";
+      // linkedin.src = "images/white-linkedin.png";
   } else {
       document.body.classList.remove("dark-mode");
       mode.src = "images/moon.png";
+      // facebook.src = "images/facebook.png";
+      // linkedin.src = "images/linkedin.png";
   }
+
   mode.onclick = function () {
-      document.body.classList.toggle("dark-mode");
-      if (document.body.classList.contains("dark-mode")) {
-          mode.src = "images/sun.png";
-          facebook.src = "images/sun.png";
-          linkedin.src = "images/sun.png";
-          localStorage.setItem("theme", "dark");
-      } else {
-          mode.src = "images/moon.png";
-          localStorage.setItem("theme", "light");
-      }
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        mode.src = "images/sun.png";
+        // facebook.src = "images/white-facebook.png";
+        // linkedin.src = "images/white-linkedin.png";
+        localStorage.setItem("theme", "dark");
+    } else {
+        mode.src = "images/moon.png";
+        // facebook.src = "images/facebook.png";
+        // linkedin.src = "images/linkedin.png";
+        localStorage.setItem("theme", "light");
+    }    
   };
 }
 

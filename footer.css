@@ -11,6 +11,57 @@ footer {
     align-items: center;
 }
 
+.footer-data{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.image-logo{
+    align-self: center;
+}
+
+.image-logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-self: center;
+}
+
+.details-one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.details-one p{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.details-one a{
+    text-decoration: none;
+    color: var(--font-color);
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
+
+.line{
+    width: 98%;
+    height: 1px;
+    background-color: var(--font-color);
+    margin-bottom: 10px;
+}
+
 footer p{
     font-size: var(--footer-font-size);
 }
