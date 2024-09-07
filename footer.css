@@ -5,5 +5,12 @@ footer {
     width: 100%;
     bottom: 0;
     color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
     font-size: var(--footer-font-size);
 }

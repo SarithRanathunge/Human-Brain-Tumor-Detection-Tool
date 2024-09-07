@@ -16,10 +16,14 @@ function loadFooter() {
 }
 
 function applyModeSettings() {
-  var mode = document.getElementById("mode");
+  let mode = document.getElementById("mode");
+  let facebook = document.getElementById("facebook");
+  let linkedin = document.getElementById("linkedin");
   if (localStorage.getItem("theme") === "dark") {
       document.body.classList.add("dark-mode");
       mode.src = "images/sun.png";
+      facebook.src = "images/sun.png";
+      linkedin.src = "images/sun.png";
   } else {
       document.body.classList.remove("dark-mode");
       mode.src = "images/moon.png";
@@ -28,6 +32,8 @@ function applyModeSettings() {
       document.body.classList.toggle("dark-mode");
       if (document.body.classList.contains("dark-mode")) {
           mode.src = "images/sun.png";
+          facebook.src = "images/sun.png";
+          linkedin.src = "images/sun.png";
           localStorage.setItem("theme", "dark");
       } else {
           mode.src = "images/moon.png";

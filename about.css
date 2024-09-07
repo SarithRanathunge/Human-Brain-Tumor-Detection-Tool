@@ -34,8 +34,8 @@
 }
 
 .personal-image{
-    width: 700px;
-    height: 210px;
+    width: 750px;
+    height: 240px;
     background-image: url(images/upload_image.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -43,8 +43,37 @@
     border-radius: 10px;
 }
 
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 .details h2{
     margin-top: 5px;
+}
+
+.social-media{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.social-media a{
+    gap: 10px;
+}
+
+.social-media a img{
+    height: 30px;
+    width: 30px;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .details p{
@@ -58,3 +87,4 @@
 .four-box{
     margin-bottom: 40px;
 }
+
