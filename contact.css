@@ -17,8 +17,8 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font-family-sans);
-    margin-top: 105px;
-    margin-bottom: 37px;
+    margin-top: 125px;
+    margin-bottom: 40px;
     color: var(--font-color);
 }
 
@@ -36,7 +36,7 @@ form {
 .form-group {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 input, textarea {
