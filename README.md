@@ -1,6 +1,6 @@
 # Human Brain Tumor Detection Tool
 
-### | Contributors: [SarithRanathunge](https://github.com/SarithRanathunge) & [TharunPerera](https://github.com/TharunPerera) & [LiviruNaverathna](https://github.com/Liviru-Nava) & [HiranthaPerera](https://github.com/HiranthaNHIP)
+### | Contributors: [SarithRanathunge](https://github.com/SarithRanathunge) & [TharunPerera](https://github.com/TharunPerera) & [LiviruNavarathna](https://github.com/Liviru-Nava) & [HiranthaPerera](https://github.com/HiranthaNHIP)
 
 ## Introduction of the project 🔍🔍🔍🔍
 Detecting and understanding the presence of a brain tumor plays a critical role in the medical field. 
