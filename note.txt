@@ -1,0 +1,6 @@
+Need each person Position, Used Languages and they role in this project.
+Need to complete contact page user message taransfer to firebaxse.
+Create a page to only accessing for 4 of us with username and password.
+Complete the readme file.
+complete the home page.
+After complete all of above these, try to update this project with Firebase.(In about page, Service page paragraph and bullet points,Home page[showing user comments what are saved in firebase])
