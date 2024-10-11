@@ -49,6 +49,30 @@ function applyModeSettings() {
   };
 }
 
+//Image upload into web-page(drag and drop or upload)
+const dropArea = document.getElementById("drop-area-section");
+const inputFile = document.getElementById("input-file");
+const imageShow = document.getElementById("image-show");
+
+inputFile.addEventListener("change", uploadImage);
+
+function uploadImage(){
+    let imageLink =URL.createObjectURL(inputFile.files[0]);
+    imageShow.style.backgroundImage = `url(${imageLink})`;
+    imageShow.textContent = "";
+    imageShow.style.border = 0;
+}
+
+dropArea.addEventListener("dragover", function(e){
+    e.preventDefault();
+});
+
+dropArea.addEventListener("drop", function(e){
+    e.preventDefault();
+    inputFile.files = e.dataTransfer.files;
+    uploadImage();
+});
+
 // Proceed button
 const proceedButton = document.getElementById('proceed');
 proceedButton.addEventListener('click', async function (event) {
